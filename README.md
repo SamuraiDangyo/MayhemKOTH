@@ -1,4 +1,4 @@
-![logo](https://github.com/user-attachments/assets/7c1ec057-87e9-4ac1-8f69-61dab882b339)
+![logo](https://github.com/user-attachments/assets/4b9cc739-fc1f-4bd7-8746-c4cc5a9dfbcd)
 
 # MayhemKOTH
 
@@ -7,7 +7,7 @@ Linux Xboard KOTH Chess Engine
 ## Supported commands
 
 ```
-MayhemKOTH. Linux Xboard KOTH Chess engine. Written in C++20 language
+MayhemKOTH. Linux Xboard KOTH Chess Engine. Written in C++20 language
 
 Supported commands:
 
@@ -16,6 +16,9 @@ help
 
 ping [N]
   Responded by 'pong N'
+
+protover 2]
+  Only Xboard protocol 2 supported
 
 level [movestogo] [time] [inc]
   Setup time control
@@ -75,10 +78,45 @@ speed [ms = 5000]
   Show speed of the program
 
 exit
-  Exits the analyze mode
+  Exit the analyze mode
 
 quit
-  Exits the engine ASAP
+  Quit the engine ASAP
+```
+
+## Tests
+
+```
+Score of MayhemKOTH 1.0 vs MayhemKOTH 1.0: 437 - 408 - 155  [0.514] 1000
+...      MayhemKOTH 1.0 playing White: 266 - 189 - 45  [0.577] 500
+...      MayhemKOTH 1.0 playing Black: 171 - 219 - 110  [0.452] 500
+...      White vs Black: 485 - 360 - 155  [0.563] 1000
+Elo difference: 10.1 +/- 19.8, LOS: 84.1 %, DrawRatio: 15.5 %
+SPRT: llr 0 (0.0%), lbound -inf, ubound inf
+
+Player: MayhemKOTH 1.0
+   "Draw by 3-fold repetition": 154
+   "Draw by insufficient mating material": 1
+   "Loss: Black mates": 43
+   "Loss: Black wins with king in the center": 146
+   "Loss: White mates": 24
+   "Loss: White wins with king in the center": 195
+   "Win: Black mates": 34
+   "Win: Black wins with king in the center": 137
+   "Win: White mates": 47
+   "Win: White wins with king in the center": 219
+Player: MayhemKOTH 1.0
+   "Draw by 3-fold repetition": 154
+   "Draw by insufficient mating material": 1
+   "Loss: Black mates": 34
+   "Loss: Black wins with king in the center": 137
+   "Loss: White mates": 47
+   "Loss: White wins with king in the center": 219
+   "Win: Black mates": 43
+   "Win: Black wins with king in the center": 146
+   "Win: White mates": 24
+   "Win: White wins with king in the center": 195
+Finished match
 ```
 
 ## Sample game
